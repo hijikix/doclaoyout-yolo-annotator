@@ -24,7 +24,7 @@ def process(jpg_file_path: str):
         image,  # Image to predict
         imgsz=1024,  # Prediction image size
         conf=0.2,  # Confidence threshold
-        device="cpu",  # Device to use (e.g., 'cuda:0' or 'cpu')
+        device="cuda:0",  # Device to use (e.g., 'cuda:0' or 'cpu')
     )
 
     output_file = os.path.join(output_json_dir, f"{base_name}.json")
